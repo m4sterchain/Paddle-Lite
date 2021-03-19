@@ -114,14 +114,14 @@ SET(CMAKE_EXTRA_INCLUDE_FILES "")
 # Common flags. the compiler flag used for C/C++ sources whenever release or debug
 # Do not care if this flag is support for gcc.
 
+#    -Werror
+#    -Wall
+#    -Wextra
 # https://github.com/PaddlePaddle/Paddle/issues/12773
 if (NOT WIN32)
 set(COMMON_FLAGS
     -fPIC
     -fno-omit-frame-pointer
-    -Werror
-    -Wall
-    -Wextra
     -Wnon-virtual-dtor
     -Wdelete-non-virtual-dtor
     -Wno-unused-but-set-variable  # Warnings in not-ensured type
