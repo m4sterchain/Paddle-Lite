@@ -9,7 +9,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: paddlepaddle/paddle-lite:latest
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
